@@ -25,7 +25,7 @@ print(f'Shape X_test: {X_test.shape}')
 print(f'Shape y_test: {y_test.shape}')
 
 lr = LogisticRegression()
-theta, bias, costs = lr.fit(X_test, y_test, n_iter=500, learning_rate=0.008)
+theta, bias, costs = lr.fit(X_train, y_train, n_iter=500, learning_rate=0.008)
 
 fig = plt.figure(figsize=(8,6))
 plt.plot(np.arange(500), costs)
